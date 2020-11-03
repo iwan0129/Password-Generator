@@ -1,0 +1,233 @@
+﻿<Window
+    x:Class="Password_Generator.MainWindow"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    x:Name="MainWin"
+    Title="Generator"
+    Width="800"
+    Height="450"
+    Background="#FF252020"
+    Closing="MainWin_Closing"
+    ResizeMode="NoResize"
+    SnapsToDevicePixels="True"
+    WindowStyle="ToolWindow"
+    mc:Ignorable="d">
+    <Grid SnapsToDevicePixels="True">
+        <TextBox
+            x:Name="PasswordBox"
+            Width="772"
+            Height="48"
+            Margin="10,64,0,0"
+            HorizontalAlignment="Left"
+            VerticalAlignment="Top"
+            FontSize="32"
+            SnapsToDevicePixels="True"
+            Text="{Binding Mode=OneWay, IsAsync=True}"
+            TextWrapping="Wrap" />
+        <Button
+            x:Name="GenerateButton"
+            Width="240"
+            Height="60"
+            Margin="278,267,0,0"
+            HorizontalAlignment="Left"
+            VerticalAlignment="Top"
+            Click="GenerateButton_Click"
+            Content="Generate"
+            FontSize="30"
+            SnapsToDevicePixels="True" />
+        <CheckBox
+            x:Name="DigitBox"
+            Width="15"
+            Height="16"
+            Margin="660,114,0,0"
+            HorizontalAlignment="Left"
+            VerticalAlignment="Top"
+            Click="DigitBox_Click"
+            Foreground="White"
+            SnapsToDevicePixels="True">
+            <CheckBox.LayoutTransform>
+                <ScaleTransform ScaleX="2.05" ScaleY="2.05" />
+            </CheckBox.LayoutTransform>
+        </CheckBox>
+        <TextBlock
+            Width="60"
+            Height="27"
+            Margin="694,115,0,0"
+            HorizontalAlignment="Left"
+            VerticalAlignment="Top"
+            FontSize="20"
+            Foreground="White"
+            SnapsToDevicePixels="True"
+            Text="Digits" />
+        <CheckBox
+            x:Name="LetterBox"
+            Width="15"
+            Height="16"
+            Margin="521,114,0,0"
+            HorizontalAlignment="Left"
+            VerticalAlignment="Top"
+            Click="LetterBox_Click"
+            Foreground="White"
+            SnapsToDevicePixels="True">
+            <CheckBox.LayoutTransform>
+                <ScaleTransform ScaleX="2.05" ScaleY="2.05" />
+            </CheckBox.LayoutTransform>
+        </CheckBox>
+        <TextBlock
+            Width="69"
+            Height="26"
+            Margin="557,115,0,0"
+            HorizontalAlignment="Left"
+            VerticalAlignment="Top"
+            FontSize="20"
+            Foreground="White"
+            SnapsToDevicePixels="True"
+            Text="Letters" />
+        <CheckBox
+            x:Name="SpaceBox"
+            Width="15"
+            Height="16"
+            Margin="660,159,0,0"
+            HorizontalAlignment="Left"
+            VerticalAlignment="Top"
+            Click="SpaceBox_Click"
+            Foreground="White"
+            SnapsToDevicePixels="True">
+            <CheckBox.LayoutTransform>
+                <ScaleTransform ScaleX="2.05" ScaleY="2.05" />
+            </CheckBox.LayoutTransform>
+        </CheckBox>
+        <TextBlock
+            Width="84"
+            Height="28"
+            Margin="694,159,0,0"
+            HorizontalAlignment="Left"
+            VerticalAlignment="Top"
+            FontSize="20"
+            Foreground="White"
+            SnapsToDevicePixels="True"
+            Text="Space" />
+        <CheckBox
+            x:Name="BigLetterBox"
+            Width="15"
+            Height="16"
+            Margin="521,159,0,0"
+            HorizontalAlignment="Left"
+            VerticalAlignment="Top"
+            Click="BigLetterBox_Click"
+            Foreground="White"
+            SnapsToDevicePixels="True">
+            <CheckBox.LayoutTransform>
+                <ScaleTransform ScaleX="2.05" ScaleY="2.05" />
+            </CheckBox.LayoutTransform>
+        </CheckBox>
+        <TextBlock
+            Width="102"
+            Height="28"
+            Margin="557,159,0,0"
+            HorizontalAlignment="Left"
+            VerticalAlignment="Top"
+            FontSize="20"
+            Foreground="White"
+            SnapsToDevicePixels="True"
+            Text="Big Letters" />
+        <CheckBox
+            x:Name="SymbolBox"
+            Width="15"
+            Height="16"
+            Margin="522,201,0,0"
+            HorizontalAlignment="Left"
+            VerticalAlignment="Top"
+            Click="SymbolBox_Click"
+            Foreground="White"
+            SnapsToDevicePixels="True">
+            <CheckBox.LayoutTransform>
+                <ScaleTransform ScaleX="2.05" ScaleY="2.05" />
+            </CheckBox.LayoutTransform>
+        </CheckBox>
+        <TextBlock
+            Width="75"
+            Height="27"
+            Margin="557,202,0,0"
+            HorizontalAlignment="Left"
+            VerticalAlignment="Top"
+            FontSize="20"
+            Foreground="White"
+            SnapsToDevicePixels="True"
+            Text="Symbols" />
+        <Menu
+            Width="792"
+            Height="34"
+            HorizontalAlignment="Left"
+            VerticalAlignment="Top"
+            Background="Black"
+            SnapsToDevicePixels="True">
+            <MenuItem
+                FontSize="24"
+                Foreground="White"
+                Header="Options"
+                SnapsToDevicePixels="True">
+                <TextBlock
+                    Foreground="Black"
+                    SnapsToDevicePixels="True"
+                    Text="Password Length" />
+                <TextBox
+                    Name="PasswordLengthBox"
+                    Width="182"
+                    Background="{x:Null}"
+                    BorderBrush="#FF000923"
+                    KeyDown="PasswordLengthBox_KeyDown"
+                    SnapsToDevicePixels="True"
+                    TextChanged="PasswordLengthBox_TextChanged" />
+                <Separator SnapsToDevicePixels="True" />
+                <TextBlock
+                    Foreground="Black"
+                    SnapsToDevicePixels="True"
+                    Text="SerialKey Length" />
+                <TextBox
+                    Name="SerialKeyLengthBox"
+                    Width="182"
+                    Background="{x:Null}"
+                    BorderBrush="#FF000923"
+                    KeyDown="SerialKeyLengthBox_KeyDown"
+                    SnapsToDevicePixels="True"
+                    TextChanged="SerialKeyLengthBox_TextChanged" />
+                <TextBlock
+                    Foreground="Black"
+                    SnapsToDevicePixels="True"
+                    Text="SerialKey Size" />
+                <TextBox
+                    Name="SerialKeySizeBox"
+                    Width="182"
+                    Background="{x:Null}"
+                    BorderBrush="#FF000923"
+                    KeyDown="SerialKeySizeBox_KeyDown"
+                    SnapsToDevicePixels="True"
+                    TextChanged="SerialKeySizeBox_TextChanged" />
+            </MenuItem>
+            <Separator Width="5" SnapsToDevicePixels="True" />
+            <MenuItem
+                FontSize="24"
+                Foreground="White"
+                Header="Generator"
+                SnapsToDevicePixels="True">
+                <MenuItem
+                    Name="PasswordGenerator"
+                    Click="PasswordGenerator_Click"
+                    Foreground="Black"
+                    Header="Password"
+                    IsCheckable="True"
+                    SnapsToDevicePixels="True" />
+                <MenuItem
+                    Name="SerialKeyGenerator"
+                    Click="SerialKeyGenerator_Click"
+                    Foreground="Black"
+                    Header="Serial Key"
+                    IsCheckable="True"
+                    SnapsToDevicePixels="True" />
+            </MenuItem>
+        </Menu>
+    </Grid>
+</Window>
