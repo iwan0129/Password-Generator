@@ -158,7 +158,7 @@ uzunow0129@gmail.com
 [license-shield]: https://img.shields.io/github/license/iwan0129/Password-Generator.svg?style=for-the-badge
 [license-url]: https://github.com/iwan0129/Password-Generator/blob/master/LICENSE
 [product-screenshot]: images/screenshot.png
-[repo-size]: https://img.shields.io/github/repo-size/iwan0129/Password-Generator.svg?label=repository%20size&style=flat-square
+[repo-size]: https://img.shields.io/github/repo-size/iwan0129/Password-Generator.svg?label=repository%20size&style=for-the-badge
 [commit-activity]: https://img.shields.io/github/commit-activity/m/iwan0129/Password-Generator.svg?style=for-the-badge
 [commit-url]: https://github.com/iwan0129/Password-Generator/commits/master
 [followers]: https://img.shields.io/github/followers/iwan0129?style=for-the-badge
