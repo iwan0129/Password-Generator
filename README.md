@@ -33,8 +33,6 @@
 </p>
 
 
-
-<!-- TABLE OF CONTENTS -->
 ## Table of Contents
 
 * [About the Project](#about-the-project)
@@ -49,29 +47,16 @@
 * [Contact](#contact)
 * [Acknowledgements](#acknowledgements)
 
-
-
-<!-- ABOUT THE PROJECT -->
 ## About The Project
 
 <!-- [![Product Name Screen Shot][product-screenshot]](https://example.com) -->
 
 Generates Passwords and SerialKeys
 
-
-
-
 ### Built With
 .NET Framework 4.5 or Higher
 
-
-
-
-<!-- GETTING STARTED -->
 ## Getting Started
-
-
-
 
 <!-- ### Prerequisites
 
@@ -81,9 +66,6 @@ This is an example of how to list things you need to use the software and how to
 npm install npm@latest -g
 ```
 -->
-
-
-
 ### Installation
 
 Clone the repo
@@ -91,26 +73,14 @@ Clone the repo
 git clone https://github.com/iwan0129/Password-Generator.git
 ```
 
-
-
-
-<!-- USAGE EXAMPLES -->
 ## Usage
 
 Start the program. There are checkboxes for the type of symbols you want to include in your Password/SerialKey generation. In the Options menu you can set the Password's Length, the SerialKey's Length and Size. In the Generator menu you select the type of generation you want(Password/SerialKet). Press Generate to make generation
 
-
-
-
-<!-- ROADMAP -->
 ## Roadmap
 
 See the [open issues](https://github.com/iwan0129/Password-Generator/issues) for a list of proposed features (and known issues).
 
-
-
-
-<!-- CONTRIBUTING -->
 ## Contributing
 
 Contributions are what make the open source community such an amazing place to be learn, inspire, and create. Any contributions you make are **greatly appreciated**.
@@ -121,26 +91,14 @@ Contributions are what make the open source community such an amazing place to b
 4. Push to the Branch (`git push origin feature/AmazingFeature`)
 5. Open a Pull Request
 
-
-
-
-<!-- LICENSE -->
 ## License
 
 Distributed under the GPL-3.0 License. See `LICENSE` for more information.
 
-
-
-
-<!-- CONTACT -->
 ## Contact
 
 uzunow0129@gmail.com
 
-
-
-
-<!-- ACKNOWLEDGEMENTS -->
 ## Acknowledgements
 * [Img Shields](https://shields.io)
 * [Choose an Open Source License](https://choosealicense.com)
