@@ -1,5 +1,6 @@
 [![commit-activity]][commit-url]
 ![repo-size]
+![followers]
 [![forks-shield]][forks-url]
 [![stars-shield]][stars-url]
 [![issues-shield]][issues-url]
@@ -146,19 +147,18 @@ uzunow0129@gmail.com
 * [GitHub Pages](https://pages.github.com)
 
 
-<!-- MARKDOWN LINKS & IMAGES -->
-<!-- https://www.markdownguide.org/basic-syntax/#reference-style-links -->
-[contributors-shield]: https://img.shields.io/github/contributors/iwan0129/Password-Generator.svg?style=flat-square
+[contributors-shield]: https://img.shields.io/github/contributors/iwan0129/Password-Generator.svg?style=for-the-badge
 [contributors-url]: https://github.com/iwan0129/Password-Generator/graphs/contributors
-[forks-shield]: https://img.shields.io/github/forks/iwan0129/Password-Generator.svg?style=flat-square
+[forks-shield]: https://img.shields.io/github/forks/iwan0129/Password-Generator.svg?style=for-the-badge
 [forks-url]: https://github.com/iwan0129/Password-Generator/network/members
-[stars-shield]: https://img.shields.io/github/stars/iwan0129/Password-Generator.svg?style=flat-square
+[stars-shield]: https://img.shields.io/github/stars/iwan0129/Password-Generator.svg?style=for-the-badge
 [stars-url]: https://github.com/iwan0129/Password-Generator/stargazers
-[issues-shield]: https://img.shields.io/github/issues/iwan0129/Password-Generator.svg?style=flat-square
+[issues-shield]: https://img.shields.io/github/issues/iwan0129/Password-Generator.svg?style=for-the-badge
 [issues-url]: https://github.com/iwan0129/Password-Generator/issues
-[license-shield]: https://img.shields.io/github/license/iwan0129/Password-Generator.svg?style=flat-square
+[license-shield]: https://img.shields.io/github/license/iwan0129/Password-Generator.svg?style=for-the-badge
 [license-url]: https://github.com/iwan0129/Password-Generator/blob/master/LICENSE
 [product-screenshot]: images/screenshot.png
 [repo-size]: https://img.shields.io/github/repo-size/iwan0129/Password-Generator.svg?label=repository%20size&style=flat-square
-[commit-activity]: https://img.shields.io/github/commit-activity/m/iwan0129/Password-Generator.svg?style=flat-square
+[commit-activity]: https://img.shields.io/github/commit-activity/m/iwan0129/Password-Generator.svg?style=for-the-badge
 [commit-url]: https://github.com/iwan0129/Password-Generator/commits/master
+[followers]: https://img.shields.io/github/followers/iwan0129?style=for-the-badge
