@@ -144,7 +144,6 @@ uzunow0129@gmail.com
 * [Img Shields](https://shields.io)
 * [Choose an Open Source License](https://choosealicense.com)
 * [GitHub Pages](https://pages.github.com)
-* [Smooth Scroll](https://github.com/cferdinandi/smooth-scroll)
 
 
 <!-- MARKDOWN LINKS & IMAGES -->
