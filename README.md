@@ -1,8 +1,8 @@
 ![repo-size]
-[![Forks][forks-shield]][forks-url]
-[![Stargazers][stars-shield]][stars-url]
-[![Issues][issues-shield]][issues-url]
-[![GPL-3.0 License][license-shield]][license-url]
+[![forks-shield]][forks-url]
+[![stars-shield]][stars-url]
+[![issues-shield]][issues-url]
+[![license-shield]][license-url]
 
 
 <!-- PROJECT LOGO -->
