@@ -11,14 +11,8 @@ namespace Password_Generator
     /// </summary>
     public partial class MainWindow : Window
     {
-        #region Private Fields
-
         private readonly PasswordGenerator PasswordGen = new PasswordGenerator();
         private readonly SerialKeyGenerator SerialKeyGen = new SerialKeyGenerator();
-
-        #endregion Private Fields
-
-        #region Public Constructors
 
         public MainWindow()
         {
@@ -28,10 +22,6 @@ namespace Password_Generator
 
             PasswordLengthBox.Text = "12";
         }
-
-        #endregion Public Constructors
-
-        #region Private Methods
 
         private void BigLetterBox_Click(object sender, RoutedEventArgs e)
         {
@@ -204,7 +194,5 @@ namespace Password_Generator
                 SerialKeyGen.UseSymbols = SymbolBox.IsChecked ?? false;
             }
         }
-
-        #endregion Private Methods
     }
 }

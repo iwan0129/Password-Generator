@@ -5,8 +5,6 @@ namespace Password_Generator
 {
     internal class PasswordGenerator : IGenerator<string>
     {
-        #region Private Fields
-
         private const string BigLetters = "QWERTYUIOPASDFGHJKLZXCVBNM";
         private const string Digits = "1234567890";
         private const string Letters = "qwertyuiopasdfghjklzxcvbnm";
@@ -16,43 +14,27 @@ namespace Password_Generator
 
         private bool Disposed;
 
-        #endregion Private Fields
-
-        #region Public Fields
-
         public int Length;
 
-        #endregion Public Fields
+        public bool UseBigLetters { get; set; }
 
-        #region Public Constructors
+        public bool UseDigits { get; set; }
+
+        public bool UseLetters { get; set; }
+
+        public bool UseSpace { get; set; }
+
+        public bool UseSymbols { get; set; }
 
         public PasswordGenerator()
         {
             Random = new Random();
         }
 
-        #endregion Public Constructors
-
-        #region Private Destructors
-
         ~PasswordGenerator()
         {
             Dispose(false);
         }
-
-        #endregion Private Destructors
-
-        #region Public Properties
-
-        public bool UseBigLetters { get; set; }
-        public bool UseDigits { get; set; }
-        public bool UseLetters { get; set; }
-        public bool UseSpace { get; set; }
-        public bool UseSymbols { get; set; }
-
-        #endregion Public Properties
-
-        #region Protected Methods
 
         protected virtual void Dispose(bool disposing)
         {
@@ -69,10 +51,6 @@ namespace Password_Generator
                 }
             }
         }
-
-        #endregion Protected Methods
-
-        #region Public Methods
 
         public void Dispose()
         {
@@ -167,7 +145,5 @@ namespace Password_Generator
 
             return new string(generation, 0, generation.Length);
         }
-
-        #endregion Public Methods
     }
 }
