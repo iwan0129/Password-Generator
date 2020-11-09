@@ -4,8 +4,6 @@ namespace Password_Generator.Tools
 {
     internal static class Extensions
     {
-        #region Public Methods
-
         public static char ConvertToChar(this Key key)
         {
             if (key >= Key.A && key <= Key.Z)
@@ -19,7 +17,5 @@ namespace Password_Generator.Tools
 
             return '\0';
         }
-
-        #endregion Public Methods
     }
 }
