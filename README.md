@@ -53,6 +53,8 @@
 
 <!-- [![Product Name Screen Shot][product-screenshot]](https://example.com) -->
 
+![product-screenshot]
+
 Generates Passwords and SerialKeys
 
 ### Built With
@@ -117,7 +119,7 @@ uzunow0129@gmail.com
 [issues-url]: https://github.com/iwan0129/Password-Generator/issues
 [license-shield]: https://img.shields.io/github/license/iwan0129/Password-Generator.svg?style=for-the-badge
 [license-url]: https://github.com/iwan0129/Password-Generator/blob/master/LICENSE
-[product-screenshot]: images/screenshot.png
+[product-screenshot]: Images/Screenshot.png
 [repo-size]: https://img.shields.io/github/repo-size/iwan0129/Password-Generator.svg?label=repository%20size&style=for-the-badge
 [commit-activity]: https://img.shields.io/github/commit-activity/m/iwan0129/Password-Generator.svg?style=for-the-badge
 [commit-url]: https://github.com/iwan0129/Password-Generator/commits/master
