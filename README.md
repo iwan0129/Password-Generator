@@ -124,4 +124,4 @@ uzunow0129@gmail.com
 [followers]: https://img.shields.io/github/followers/iwan0129?style=for-the-badge
 [donate-shield]: https://img.shields.io/badge/DONATE--informational?style=for-the-badge
 [donate-url]: https://paypal.me/iwan0129?locale.x=en_US
-[downloads-shield]: https://img.shields.io/github/downloads/iwan0129/Nvidia-Cache-Cleaner/total.svg?style=for-the-badge
+[downloads-shield]: https://img.shields.io/github/downloads/iwan0129/Password-Generator/total.svg?style=for-the-badge
