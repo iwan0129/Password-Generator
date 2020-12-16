@@ -55,7 +55,7 @@
 
 ![product-screenshot]
 
-Generates Passwords and SerialKeys
+Generator That Generates Passwords and SerialKeys
 
 ### Built With
 .NET Framework 4.5 or Higher
