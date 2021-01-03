@@ -2,7 +2,7 @@
 ![repo-size]
 ![downloads-shield]
 ![followers]
-[![donate-shield]][donate-url]
+[![paypal-donate]][paypal-url]
 [![forks-shield]][forks-url]
 [![stars-shield]][stars-url]
 [![issues-shield]][issues-url]
@@ -53,7 +53,9 @@
 
 <!-- [![Product Name Screen Shot][product-screenshot]](https://example.com) -->
 
-Generates Passwords and SerialKeys
+![product-screenshot]
+
+Generator That Generates Passwords and SerialKeys
 
 ### Built With
 .NET Framework 4.5 or Higher
@@ -77,7 +79,11 @@ git clone https://github.com/iwan0129/Password-Generator.git
 
 ## Usage
 
-Start the program. There are checkboxes for the type of symbols you want to include in your Password/SerialKey generation. In the Options menu you can set the Password's Length, the SerialKey's Length and Size. In the Generator menu you select the type of generation you want(Password/SerialKet). Press Generate to make generation
+Start the program.<br>
+There are checkboxes for the type of symbols you want to include in your Password/SerialKey generation.<br>
+In the Options menu you can set the Password's Length, the SerialKey's Length and Size.<br>
+In the Generator menu you select the type of generation you want(Password/SerialKet).<br>
+Press Generate to make generation.<br>
 
 ## Roadmap
 
@@ -117,11 +123,11 @@ uzunow0129@gmail.com
 [issues-url]: https://github.com/iwan0129/Password-Generator/issues
 [license-shield]: https://img.shields.io/github/license/iwan0129/Password-Generator.svg?style=for-the-badge
 [license-url]: https://github.com/iwan0129/Password-Generator/blob/master/LICENSE
-[product-screenshot]: images/screenshot.png
+[product-screenshot]: Images/Screenshot.png
 [repo-size]: https://img.shields.io/github/repo-size/iwan0129/Password-Generator.svg?label=repository%20size&style=for-the-badge
 [commit-activity]: https://img.shields.io/github/commit-activity/m/iwan0129/Password-Generator.svg?style=for-the-badge
 [commit-url]: https://github.com/iwan0129/Password-Generator/commits/master
 [followers]: https://img.shields.io/github/followers/iwan0129?style=for-the-badge
-[donate-shield]: https://img.shields.io/badge/DONATE--informational?style=for-the-badge
-[donate-url]: https://paypal.me/iwan0129?locale.x=en_US
+[paypal-url]: https://paypal.me/iwan0129?locale.x=en_US
+[paypal-donate]: https://img.shields.io/badge/donate-PayPal-104098.svg?style=for-the-badge&logo=PayPal
 [downloads-shield]: https://img.shields.io/github/downloads/iwan0129/Password-Generator/total.svg?style=for-the-badge
