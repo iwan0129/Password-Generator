@@ -8,6 +8,8 @@
     Title="Password Generator"
     Width="800"
     Height="450"
+    MinWidth="800"
+    MinHeight="450"
     Background="#FF252020"
     Closing="MainWin_Closing"
     SnapsToDevicePixels="True"
@@ -44,7 +46,7 @@
             Height="48"
             Margin="0,39,0,0"
             VerticalAlignment="Top"
-            FontSize="32"
+            FontSize="34"
             SnapsToDevicePixels="True"
             Text="{Binding Mode=OneWay, IsAsync=True}"
             TextWrapping="Wrap" />
@@ -53,17 +55,13 @@
             x:Name="GenerateButton"
             Grid.Row="1"
             Grid.Column="1"
-            Width="240"
             Height="60"
-            Margin="235,204,235,0"
-            HorizontalAlignment="Center"
+            Margin="198,204,199,0"
             VerticalAlignment="Top"
             Click="GenerateButton_Click"
             Content="Generate"
-            FontSize="30"
+            FontSize="34"
             SnapsToDevicePixels="True" />
-
-
 
         <Menu
             Grid.Row="0"
@@ -160,16 +158,17 @@
             Width="752"
             Height="50"
             Margin="0,92,0,214"
+            HorizontalAlignment="Center"
             VerticalAlignment="Top"
-            Orientation="Horizontal" HorizontalAlignment="Center">
+            Orientation="Horizontal">
 
             <CheckBox
-                x:Name="BigLetterBox"
+                x:Name="LetterBox"
                 Width="15"
                 Height="16"
                 HorizontalAlignment="Left"
                 VerticalAlignment="Top"
-                Click="BigLetterBox_Click"
+                Click="LetterBox_Click"
                 Foreground="White"
                 SnapsToDevicePixels="True">
 
@@ -197,12 +196,12 @@
                 Foreground="{x:Null}" />
 
             <CheckBox
-                x:Name="LetterBox"
+                x:Name="BigLetterBox"
                 Width="15"
                 Height="16"
                 HorizontalAlignment="Left"
                 VerticalAlignment="Top"
-                Click="LetterBox_Click"
+                Click="BigLetterBox_Click"
                 Foreground="White"
                 SnapsToDevicePixels="True">
 
