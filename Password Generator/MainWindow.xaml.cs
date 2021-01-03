@@ -1,4 +1,5 @@
-﻿using Password_Generator.Tools;
+﻿using Password_Generator.Generators;
+using Password_Generator.Tools;
 using System.ComponentModel;
 using System.Windows;
 using System.Windows.Controls;
@@ -12,6 +13,7 @@ namespace Password_Generator
     public partial class MainWindow : Window
     {
         private readonly PasswordGenerator PasswordGen = new PasswordGenerator();
+
         private readonly SerialKeyGenerator SerialKeyGen = new SerialKeyGenerator();
 
         public MainWindow()

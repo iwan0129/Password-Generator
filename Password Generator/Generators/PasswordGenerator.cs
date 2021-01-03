@@ -1,30 +1,24 @@
 ﻿using System;
-using System.Text;
 
-namespace Password_Generator
+namespace Password_Generator.Generators
 {
-    internal class PasswordGenerator : IGenerator<string>
+    internal class PasswordGenerator : StringBasedGenerator
     {
-        private const string BigLetters = "QWERTYUIOPASDFGHJKLZXCVBNM";
-        private const string Digits = "1234567890";
-        private const string Letters = "qwertyuiopasdfghjklzxcvbnm";
-        private const string Symbols = @"!@#$%^&*()_+-=\|{}[]:;/.>?<`~";
-
         private readonly Random Random;
 
         private bool Disposed;
 
         public int Length;
 
-        public bool UseBigLetters { get; set; }
+        public sealed override bool UseBigLetters { get; set; }
 
-        public bool UseDigits { get; set; }
+        public sealed override bool UseDigits { get; set; }
 
-        public bool UseLetters { get; set; }
+        public sealed override bool UseLetters { get; set; }
 
-        public bool UseSpace { get; set; }
+        public sealed override bool UseSpace { get; set; }
 
-        public bool UseSymbols { get; set; }
+        public sealed override bool UseSymbols { get; set; }
 
         public PasswordGenerator()
         {
@@ -52,14 +46,14 @@ namespace Password_Generator
             }
         }
 
-        public void Dispose()
+        public sealed override void Dispose()
         {
             Dispose(true);
 
             GC.SuppressFinalize(this);
         }
 
-        public string Generate()
+        public sealed override string Generate()
         {
             if ((!UseDigits && !UseLetters && !UseBigLetters && !UseSymbols) || Length == 0)
             {
@@ -76,74 +70,86 @@ namespace Password_Generator
             {
             start:
 
-                char c;
+                char value;
 
                 switch (Random.Next(1, 6))
                 {
                     case 1:
+
                         if (UseLetters)
                         {
-                            c = Letters[Random.Next(0, Letters.Length)];
+                            value = Letters[Random.Next(0, Letters.Length)];
                         }
                         else
                         {
                             goto start;
                         }
+
                         break;
 
                     case 2:
+
                         if (UseBigLetters)
                         {
-                            c = BigLetters[Random.Next(0, BigLetters.Length)];
+                            value = BigLetters[Random.Next(0, BigLetters.Length)];
                         }
                         else
                         {
                             goto start;
                         }
+
                         break;
 
                     case 3:
+
                         if (UseDigits)
                         {
-                            c = Digits[Random.Next(0, Digits.Length)];
+                            value = Digits[Random.Next(0, Digits.Length)];
                         }
                         else
                         {
                             goto start;
                         }
+
                         break;
 
                     case 4:
+
                         if (UseSpace && i > 0 && i < Length - 1)
                         {
-                            c = ' ';
+                            value = ' ';
                         }
                         else
                         {
                             goto start;
                         }
+
                         break;
 
                     case 5:
+
                         if (UseSymbols)
                         {
-                            c = Symbols[Random.Next(0, Symbols.Length)];
+                            value = Symbols[Random.Next(0, Symbols.Length)];
                         }
                         else
                         {
                             goto start;
                         }
+
                         break;
 
                     default:
-                        c = '\0';
+
+                        value = '\0';
+
                         break;
                 }
 
-                generation[offset++] = c;
+                generation[offset++] = value;
             }
 
-            return new string(generation, 0, generation.Length);
+            return new string(generation, 0, offset);
         }
     }
 }

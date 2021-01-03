@@ -1,6 +1,6 @@
 ﻿using System;
 
-namespace Password_Generator
+namespace Password_Generator.Generators
 {
     internal interface IGenerator<T> : IDisposable
     {
