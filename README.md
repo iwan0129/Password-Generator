@@ -65,7 +65,7 @@ C# 8.0<br>
 
 ### Prerequisites
 
-.NET Framework 4.5 or Higher
+* .NET Framework 4.5 or Higher
 
 ### Installation
 
