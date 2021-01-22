@@ -58,18 +58,15 @@
 Generator That Generates Passwords and SerialKeys
 
 ### Built With
-.NET Framework 4.5 or Higher
+C# 8.0
+.NET Framework 4.5
 
 ## Getting Started
 
-<!-- ### Prerequisites
+### Prerequisites
 
-This is an example of how to list things you need to use the software and how to install them.
-* npm
-```sh
-npm install npm@latest -g
-```
--->
+.NET Framework 4.5 or Higher
+
 ### Installation
 
 Clone the repo
