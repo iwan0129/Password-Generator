@@ -22,19 +22,20 @@
 
             <RowDefinition Height="34*" />
 
-            <RowDefinition Height="358*" />
+            <RowDefinition Height="179*" />
+            <RowDefinition Height="198*" />
 
-            <RowDefinition Height="29*" />
+            <RowDefinition Height="8*" />
 
         </Grid.RowDefinitions>
 
         <Grid.ColumnDefinitions>
 
-            <ColumnDefinition Width="20*" />
+            <ColumnDefinition Width="0*" />
 
-            <ColumnDefinition Width="356*" />
+            <ColumnDefinition />
 
-            <ColumnDefinition Width="21*" />
+            <ColumnDefinition Width="0*" />
 
         </Grid.ColumnDefinitions>
 
@@ -43,19 +44,21 @@
             Grid.Row="1"
             Grid.Column="1"
             Grid.ColumnSpan="1"
-            Height="48"
-            Margin="0,39,0,0"
-            VerticalAlignment="Top"
+            AcceptsReturn="True"
+            Background="{x:Null}"
+            CaretBrush="White"
             FontSize="34"
+            Foreground="White"
             Text="{Binding Mode=OneWay, IsAsync=True}"
-            TextWrapping="Wrap" />
+            TextWrapping="Wrap"
+            VerticalScrollBarVisibility="Auto" />
 
         <Button
             x:Name="GenerateButton"
-            Grid.Row="1"
+            Grid.Row="2"
             Grid.Column="1"
             Height="60"
-            Margin="198,204,199,0"
+            Margin="198,82,199,0"
             VerticalAlignment="Top"
             Click="GenerateButton_Click"
             Content="Generate"
@@ -64,7 +67,8 @@
         <Menu
             Grid.Row="0"
             Grid.Column="0"
-            Grid.ColumnSpan="3"
+            Grid.ColumnSpan="2"
+            Height="34"
             VerticalAlignment="Top"
             Background="Black">
 
@@ -133,12 +137,11 @@
         </Menu>
 
         <StackPanel
-            Grid.Row="1"
+            Grid.Row="2"
             Grid.Column="1"
-            Grid.ColumnSpan="2"
-            Width="752"
+            Width="792"
             Height="50"
-            Margin="0,92,0,214"
+            Margin="0,4,0,0"
             HorizontalAlignment="Center"
             VerticalAlignment="Top"
             Orientation="Horizontal">
