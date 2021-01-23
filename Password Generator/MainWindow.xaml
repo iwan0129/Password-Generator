@@ -16,7 +16,7 @@
     WindowStyle="ThreeDBorderWindow"
     mc:Ignorable="d">
 
-    <Grid SnapsToDevicePixels="True">
+    <Grid>
 
         <Grid.RowDefinitions>
 
@@ -47,7 +47,6 @@
             Margin="0,39,0,0"
             VerticalAlignment="Top"
             FontSize="34"
-            SnapsToDevicePixels="True"
             Text="{Binding Mode=OneWay, IsAsync=True}"
             TextWrapping="Wrap" />
 
@@ -60,27 +59,21 @@
             VerticalAlignment="Top"
             Click="GenerateButton_Click"
             Content="Generate"
-            FontSize="34"
-            SnapsToDevicePixels="True" />
+            FontSize="34" />
 
         <Menu
             Grid.Row="0"
             Grid.Column="0"
             Grid.ColumnSpan="3"
             VerticalAlignment="Top"
-            Background="Black"
-            SnapsToDevicePixels="True">
+            Background="Black">
 
             <MenuItem
                 FontSize="24"
                 Foreground="White"
-                Header="Options"
-                SnapsToDevicePixels="True">
+                Header="Options">
 
-                <TextBlock
-                    Foreground="Black"
-                    SnapsToDevicePixels="True"
-                    Text="Password Length" />
+                <TextBlock Foreground="Black" Text="Password Length" />
 
                 <TextBox
                     Name="PasswordLengthBox"
@@ -88,15 +81,11 @@
                     Background="{x:Null}"
                     BorderBrush="#FF000923"
                     KeyDown="PasswordLengthBox_KeyDown"
-                    SnapsToDevicePixels="True"
                     TextChanged="PasswordLengthBox_TextChanged" />
 
-                <Separator SnapsToDevicePixels="True" />
+                <Separator />
 
-                <TextBlock
-                    Foreground="Black"
-                    SnapsToDevicePixels="True"
-                    Text="SerialKey Length" />
+                <TextBlock Foreground="Black" Text="SerialKey Length" />
 
                 <TextBox
                     Name="SerialKeyLengthBox"
@@ -104,13 +93,9 @@
                     Background="{x:Null}"
                     BorderBrush="#FF000923"
                     KeyDown="SerialKeyLengthBox_KeyDown"
-                    SnapsToDevicePixels="True"
                     TextChanged="SerialKeyLengthBox_TextChanged" />
 
-                <TextBlock
-                    Foreground="Black"
-                    SnapsToDevicePixels="True"
-                    Text="SerialKey Size" />
+                <TextBlock Foreground="Black" Text="SerialKey Size" />
 
                 <TextBox
                     Name="SerialKeySizeBox"
@@ -118,34 +103,30 @@
                     Background="{x:Null}"
                     BorderBrush="#FF000923"
                     KeyDown="SerialKeySizeBox_KeyDown"
-                    SnapsToDevicePixels="True"
                     TextChanged="SerialKeySizeBox_TextChanged" />
 
             </MenuItem>
 
-            <Separator Width="5" SnapsToDevicePixels="True" />
+            <Separator Width="5" />
 
             <MenuItem
                 FontSize="24"
                 Foreground="White"
-                Header="Generator"
-                SnapsToDevicePixels="True">
+                Header="Generator">
 
                 <MenuItem
                     Name="PasswordGenerator"
                     Click="PasswordGenerator_Click"
                     Foreground="Black"
                     Header="Password"
-                    IsCheckable="True"
-                    SnapsToDevicePixels="True" />
+                    IsCheckable="True" />
 
                 <MenuItem
                     Name="SerialKeyGenerator"
                     Click="SerialKeyGenerator_Click"
                     Foreground="Black"
                     Header="Serial Key"
-                    IsCheckable="True"
-                    SnapsToDevicePixels="True" />
+                    IsCheckable="True" />
 
             </MenuItem>
 
@@ -169,8 +150,7 @@
                 HorizontalAlignment="Left"
                 VerticalAlignment="Top"
                 Click="LetterBox_Click"
-                Foreground="White"
-                SnapsToDevicePixels="True">
+                Foreground="White">
 
                 <CheckBox.LayoutTransform>
 
@@ -187,7 +167,6 @@
                 VerticalAlignment="Top"
                 FontSize="24"
                 Foreground="White"
-                SnapsToDevicePixels="True"
                 Text=" Letters" />
 
             <Separator
@@ -202,8 +181,7 @@
                 HorizontalAlignment="Left"
                 VerticalAlignment="Top"
                 Click="BigLetterBox_Click"
-                Foreground="White"
-                SnapsToDevicePixels="True">
+                Foreground="White">
 
                 <CheckBox.LayoutTransform>
 
@@ -220,7 +198,6 @@
                 VerticalAlignment="Top"
                 FontSize="24"
                 Foreground="White"
-                SnapsToDevicePixels="True"
                 Text=" Big Letters" />
 
             <Separator
@@ -235,8 +212,7 @@
                 HorizontalAlignment="Left"
                 VerticalAlignment="Top"
                 Click="DigitBox_Click"
-                Foreground="White"
-                SnapsToDevicePixels="True">
+                Foreground="White">
 
                 <CheckBox.LayoutTransform>
 
@@ -253,7 +229,6 @@
                 VerticalAlignment="Top"
                 FontSize="24"
                 Foreground="White"
-                SnapsToDevicePixels="True"
                 Text=" Digits" />
 
             <Separator
@@ -270,8 +245,7 @@
                 HorizontalAlignment="Left"
                 VerticalAlignment="Top"
                 Click="SpaceBox_Click"
-                Foreground="White"
-                SnapsToDevicePixels="True">
+                Foreground="White">
 
                 <CheckBox.LayoutTransform>
 
@@ -288,7 +262,6 @@
                 VerticalAlignment="Top"
                 FontSize="24"
                 Foreground="White"
-                SnapsToDevicePixels="True"
                 Text=" Space" />
 
             <Separator
@@ -305,8 +278,7 @@
                 HorizontalAlignment="Left"
                 VerticalAlignment="Top"
                 Click="SymbolBox_Click"
-                Foreground="White"
-                SnapsToDevicePixels="True">
+                Foreground="White">
 
                 <CheckBox.LayoutTransform>
 
@@ -323,7 +295,6 @@
                 VerticalAlignment="Top"
                 FontSize="24"
                 Foreground="White"
-                SnapsToDevicePixels="True"
                 Text=" Symbols" />
 
         </StackPanel>
