@@ -58,7 +58,7 @@
             Grid.Row="2"
             Grid.Column="1"
             Height="60"
-            Margin="198,82,199,0"
+            Margin="198,76,199,0"
             VerticalAlignment="Top"
             Click="GenerateButton_Click"
             Content="Generate"
@@ -140,10 +140,11 @@
             Grid.Row="2"
             Grid.Column="1"
             Width="792"
-            Height="50"
+            Height="37"
+            Margin="0,2,0,0"
             HorizontalAlignment="Center"
             VerticalAlignment="Top"
-            Orientation="Horizontal" Margin="0,2,0,0">
+            Orientation="Horizontal">
 
             <Separator
                 Width="32"
