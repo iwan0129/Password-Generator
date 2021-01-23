@@ -139,12 +139,16 @@
         <StackPanel
             Grid.Row="2"
             Grid.Column="1"
-            Width="772"
+            Width="792"
             Height="50"
-            Margin="10,4,10,0"
             HorizontalAlignment="Center"
             VerticalAlignment="Top"
-            Orientation="Horizontal">
+            Orientation="Horizontal" Margin="0,2,0,0">
+
+            <Separator
+                Width="32"
+                Background="{x:Null}"
+                Foreground="{x:Null}" />
 
             <CheckBox
                 x:Name="LetterBox"
