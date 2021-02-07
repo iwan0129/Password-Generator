@@ -23,7 +23,7 @@ namespace Password_Generator.Generators
 
         public SerialKeyGenerator()
         {
-            Random = new Random();
+            Random = new();
         }
 
         ~SerialKeyGenerator()
@@ -158,7 +158,7 @@ namespace Password_Generator.Generators
                 }
             }
 
-            return new string(generation, 0, offset);
+            return new(generation, 0, offset);
         }
     }
 }

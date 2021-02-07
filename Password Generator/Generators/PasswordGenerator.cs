@@ -22,7 +22,7 @@ namespace Password_Generator.Generators
 
         public PasswordGenerator()
         {
-            Random = new Random();
+            Random = new();
         }
 
         ~PasswordGenerator()
@@ -149,7 +149,7 @@ namespace Password_Generator.Generators
                 generation[offset++] = value;
             }
 
-            return new string(generation, 0, offset);
+            return new(generation, 0, offset);
         }
     }
 }

@@ -12,9 +12,9 @@ namespace Password_Generator
     /// </summary>
     public partial class MainWindow : Window
     {
-        private readonly PasswordGenerator PasswordGen = new PasswordGenerator();
+        private readonly PasswordGenerator PasswordGen = new();
 
-        private readonly SerialKeyGenerator SerialKeyGen = new SerialKeyGenerator();
+        private readonly SerialKeyGenerator SerialKeyGen = new();
 
         public MainWindow()
         {
@@ -104,7 +104,7 @@ namespace Password_Generator
 
         private void PasswordLengthBox_KeyDown(object sender, KeyEventArgs e)
         {
-            if (!char.IsDigit((char)KeyInterop.VirtualKeyFromKey(e.Key)) && e.Key != Key.Back)
+            if (!char.IsDigit(e.Key.ConvertToChar()) && e.Key != Key.Back)
             {
                 e.Handled = true;
             }
@@ -143,7 +143,7 @@ namespace Password_Generator
 
         private void SerialKeyLengthBox_KeyDown(object sender, KeyEventArgs e)
         {
-            if (!char.IsDigit((char)KeyInterop.VirtualKeyFromKey(e.Key)) && e.Key != Key.Back)
+            if (!char.IsDigit(e.Key.ConvertToChar()) && e.Key != Key.Back)
             {
                 e.Handled = true;
             }
