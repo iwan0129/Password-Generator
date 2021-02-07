@@ -62,7 +62,7 @@
             VerticalAlignment="Top"
             Click="GenerateButton_Click"
             Content="Generate"
-            FontSize="34" />
+            FontSize="34" Background="#FF383434" Foreground="White" />
 
         <Menu
             Grid.Row="0"
