@@ -1,5 +1,5 @@
 ﻿using Password_Generator.Generators;
-using Password_Generator.Tools;
+using Password_Generator.Utilities;
 using System.ComponentModel;
 using System.Windows;
 using System.Windows.Controls;

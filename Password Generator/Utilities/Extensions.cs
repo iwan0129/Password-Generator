@@ -1,6 +1,6 @@
 ﻿using System.Windows.Input;
 
-namespace Password_Generator.Tools
+namespace Password_Generator.Utilities
 {
     internal static class Extensions
     {
