@@ -6,7 +6,7 @@ namespace Password_Generator.Generators
     {
         private readonly Random Random;
 
-        private bool Disposed;
+        private bool disposed;
 
         public int Length;
 
@@ -32,9 +32,9 @@ namespace Password_Generator.Generators
 
         protected virtual void Dispose(bool disposing)
         {
-            if (!Disposed)
+            if (!disposed)
             {
-                Disposed = true;
+                disposed = true;
 
                 UseDigits = UseLetters = UseBigLetters = UseSymbols = UseSpace = false;
 
