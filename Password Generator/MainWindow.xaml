@@ -49,7 +49,6 @@
             CaretBrush="White"
             FontSize="34"
             Foreground="White"
-            Text="{Binding Mode=OneWay, IsAsync=True}"
             TextWrapping="Wrap"
             VerticalScrollBarVisibility="Auto" />
 
@@ -60,9 +59,11 @@
             Height="60"
             Margin="198,76,199,0"
             VerticalAlignment="Top"
+            Background="#FF383434"
             Click="GenerateButton_Click"
             Content="Generate"
-            FontSize="34" Background="#FF383434" Foreground="White" />
+            FontSize="34"
+            Foreground="White" />
 
         <Menu
             Grid.Row="0"
