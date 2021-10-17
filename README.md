@@ -76,7 +76,7 @@ git clone https://github.com/iwan0129/Password-Generator.git
 Start the program.<br>
 There are checkboxes for the type of symbols you want to include in your Password/SerialKey generation.<br>
 In the Options menu you can set the Password's Length, the SerialKey's Length and Size.<br>
-In the Generator menu you select the type of generation you want(Password/SerialKet).<br>
+In the Generator menu you select the type of generation you want(Password/SerialKey).<br>
 Press Generate to make generation.<br>
 
 ## Roadmap
